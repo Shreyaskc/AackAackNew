@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:background="#e4e4e4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <CheckBox 
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+    
+    <LinearLayout 
+        android:padding="0dp"
+        android:weightSum="1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+<LinearLayout
+    android:layout_weight=".4"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+<ImageView
+    android:layout_marginLeft="5dp"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/image"
+	android:src="@drawable/default_profilepic"/>   
+	
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp">
+
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >      
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/name"
+    android:text="Jason Duger"
+    android:textColor="#222222"
+    android:textSize="14dp"
+    android:singleLine="true"/>    
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/subname"
+    android:layout_marginLeft="5dp"
+    android:text="DugMe"
+    android:textColor="#999999"
+    android:textSize="14dp"
+    android:singleLine="true"/>   
+    </LinearLayout>
+    
+ <ImageView 
+                android:id="@+id/reaack"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:src="@drawable/reaacicon_red"
+                android:layout_below="@+id/name1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="-5dp"
+                android:visibility="gone"
+                />
+	
+    </LinearLayout>
+    </LinearLayout>
+<LinearLayout 
+    android:orientation="vertical"
+    android:id="@+id/rightlayout"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout 
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="0dp"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">  
+    <TextView
+    android:layout_marginTop="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/conversation"   	
+    android:singleLine="true"
+    android:layout_toLeftOf="@+id/time"
+	android:text="Girlfriend tyrt rtyrm r567 6575 65785 575,54 674"
+	android:textSize="14dp"
+    android:layout_alignParentLeft="true"
+	android:textColor="#222222"/> 
+	<TextView
+	android:layout_alignParentRight="true"   
+    android:layout_marginTop="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/time"   	
+    android:layout_marginLeft="5dp"
+    android:singleLine="true"
+	android:text="22h"
+	android:textSize="14dp"
+	android:textColor="#999999"/>
+	</RelativeLayout>
+	
+    <TextView
+    android:layout_marginTop="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/caption"   	
+    android:maxLines="2"
+    android:layout_marginLeft="5dp"
+	android:text="My girlfriend says the funniest things when she is happy  huih hhh yy y "
+	android:textSize="14dp"
+	android:textColor="#999999"/> 
+
+</LinearLayout>
+
+</LinearLayout>
+<LinearLayout 
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_weight=".6">
+    <ImageView 
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:layout_height="100dp"
+        android:layout_width="130dp"
+        android:id="@+id/aack"/>
+</LinearLayout>
+</LinearLayout>
+<RelativeLayout 
+  
+    android:layout_marginTop="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#cdcdcd"
+    android:layout_marginLeft="10dp"></RelativeLayout>
+</LinearLayout>

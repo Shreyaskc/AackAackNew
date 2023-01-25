@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">AackAack</string>
+
+    <string name="app_id">1679626325685475</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="crash_toast_text">Ooooops Application crashed! send the mail to your developer to fix the issue!</string>
+    <!--  <string name="instagram_id">8d227e2dbf754475a7b8dd1e172ffa10</string>
+     <string name="instagram_secret">768f6be961fe497a90b112b0bab7f619</string>
+      -->
+    <string name="instagram_id">bdf08b0be3ab48859ca51b2fb0b09511</string>
+    <string name="instagram_secret">0637959ab1c8454d988d58e305ac26a4 </string>
+    <string name="callbackurl">http://www.google.com</string>
+    <color name="textcolor">#000000</color>
+
+    <color name="textcolorbg">#41749b</color>
+    <string name="tumblr_login_activity_name">Tumblr Login</string>
+    <string name="please_wait">Please wait&#8230;</string>
+
+    <string name="choose_image_upload_status_uploading">uploading…</string>
+    <string name="choose_image_upload_status_success">uploaded to Imgur.</string>
+    <string name="choose_image_upload_status_failure">failed.</string>
+    <string name="imgur_upload_error">Error uploading image to Imgur. Please try again later.</string>
+    <string name="login_with">Login with</string>
+    <string name="continue_with_email">Or continue with email</string>
+    <string name="signin">Sign In</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_facebook_fragment">Facebook</string>
+    <string name="title_google_fragment">Google+</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_twitter">Sign in with Twitter</string>
+    <string name="sign_in_with_linked_in">Sign in with LinkedIn</string>
+    <string name="sign_in_with_fb">Sign in with Facebook</string>
+    <string name="share_fb">Facebook Share</string>
+<!--
+    <string name="facebook_app_id">1679626325685475</string>
+-->
+    <string name="facebook_app_id">2374039199525546</string>
+    <string name="fb_login_protocol_scheme">fb2374039199525546</string>
+</resources>

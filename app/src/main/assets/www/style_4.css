@@ -1,0 +1,59 @@
+.bubbledLeft,.bubbledRight{
+	position: relative;
+	margin-top: 3px;
+	max-width: 70%;
+	clear: both;
+	margin-top:10px;
+	margin-bottom:10px;
+	white-space:normal;
+	word-break:break-word;
+}
+
+.bubbledLeft{
+	float: left;
+	margin-right:auto;
+	padding: 4px 10px 4px 15px; /*position within the border*/
+}
+
+.bubbledLeft:before{
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+
+	border-width: 8px 10px 8px 17px; 
+	border-image: url(speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-webkit-border-image: url(speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-moz-border-image: url(speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-o-border-image: url(speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+}
+
+.bubbledRight{
+	float: right;
+	margin-left: auto;
+	text-align: right;
+
+	padding: 4px 15px 4px 10px; /*position within the border*/	
+}
+
+.bubbledRight:before{
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+
+	border-width: 8px 17px 8px 10px; 
+	border-image: url(speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-webkit-border-image: url(speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-moz-border-image: url(speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-o-border-image: url(speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+}
+.datetimeholder{ margin-left:30% !important;margin-right:30% !important;max-width:35% !important;color:;text-align:center;  border-bottom: 1px solid gray; line-height:0.1em;font-size: 10px;}
+.datetimeholder span { background:#ffffff;padding:0 0px; }
+

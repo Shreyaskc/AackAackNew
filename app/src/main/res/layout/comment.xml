@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbareditbg" >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="COMMENTS"
+            android:textColor="#d8e0e9"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backedt" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/comentlist"
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:layout_above="@+id/edtlayout"
+        android:layout_below="@+id/lay1"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollingCache="false"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <RelativeLayout
+        android:id="@+id/edtlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edittextbg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/send"
+            android:background="@drawable/textbox"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/edttext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:capitalize="sentences"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text=" " />
+
+            <requestFocus>
+            </requestFocus>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/send" />
+    </RelativeLayout>
+
+</RelativeLayout>

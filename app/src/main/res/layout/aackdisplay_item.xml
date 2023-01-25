@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rel_inbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="12dp" >
+
+        <ImageView
+            android:id="@+id/inbox_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/msg_plain" />
+
+        <RelativeLayout
+            android:id="@+id/inbox_inner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/inbox_left" >
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-3dp"
+                android:layout_toRightOf="@+id/curve_inbox"
+                android:background="@drawable/shape_yellow"
+                >
+
+                <TextView
+                    android:id="@+id/text_inbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:text="kadkjfdlksf"
+                    android:textColor="#000000"
+                    android:paddingTop="2dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="5dp" >
+                </TextView>
+
+                <ProgressBar
+                    android:id="@+id/mms_inboxprogress"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/text_inbox"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                     />
+
+                <ImageView
+                    android:id="@+id/mms_inbox"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/text_inbox"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:scaleType="fitXY"
+                   android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/mms_textinbox"
+                    android:layout_width="120dp" 
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mms_inbox"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#000000"
+                    android:visibility="gone"
+                   />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/curve_inbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/yellow_curve" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inbox_inner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/inbox_left"
+            android:text="dlkfhdas"
+            android:textColor="#a09e9d"
+            android:textSize="10sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <!-- to the sent items -->
+
+    <RelativeLayout
+        android:id="@+id/rel_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp" >
+
+        <ImageView
+            android:id="@+id/inbox_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/msg_plain" />
+
+        <RelativeLayout
+            android:id="@+id/sent_inner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/inbox_right" >
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-3dp"
+                android:layout_toLeftOf="@+id/curve_sent"
+                android:background="@drawable/shape_blue"
+              
+                >
+
+                <TextView
+                    android:id="@+id/text_sent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="15dp"
+                    android:text="kadkjfdlksf"
+                    android:textColor="#000000" >
+                </TextView>
+
+                <ProgressBar
+                    android:id="@+id/mms_sentprogress"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/text_sent"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/mms_sent"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/text_sent"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="2dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/mms_textsent"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mms_sent"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#000000"
+                    android:visibility="gone"
+                  />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/curve_sent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/blue_curve" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sent_inner"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/inbox_right"
+            android:text="dlkfhdas"
+            android:textColor="#a09e9d" 
+            android:textSize="10sp">
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

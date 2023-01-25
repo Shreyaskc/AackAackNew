@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp" >
+
+    <ImageView
+        android:id="@+id/propic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/default_profilepic" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/propic"
+        android:text="Sudheer"
+        android:textColor="#000000"
+        android:textSize="14dp" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#cccccc" >
+
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top1"
+        android:background="#e4e4e4" >
+
+        <FrameLayout
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#999898" >
+
+            <EditText
+                android:id="@+id/edtsearch"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="@drawable/searchbars4"
+                android:drawablePadding="8dp"
+                android:hint="Search users and hashtags"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="#cbcbcb"
+                android:textColorHint="#cbcbcb"
+                 android:inputType="textNoSuggestions" >
+                
+            </EditText>
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/search_iconnew" />
+            
+            <Button
+                android:id="@+id/cross_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/cross_btn" 
+                android:visibility="gone"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_layout"
+        android:background="#e4e4e4" >
+
+        <ListView
+            android:id="@+id/listnew"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp" 
+            android:divider="@null">
+        </ListView>
+
+        <ListView
+            android:id="@+id/listnew_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" 
+             android:divider="@null">
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
